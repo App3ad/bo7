@@ -1,12 +1,113 @@
 {
-	"global": {},
-	"env:development": {},
-	"env:test": {},
-	"env:production": {},
-	"os:android": {},
-	"os:blackberry": {},
-	"os:ios": {},
-	"os:mobileweb": {},
-	"os:windows": {},
-	"dependencies": {}
+  "global": {
+    "productType": {
+      "CC": {
+        "name": "Credit Card",
+        "color": "#FF5E3A"
+      },
+      "LO": {
+        "name": "Loans",
+        "color": "#FF2A68"
+      },
+      "MO": {
+        "name": "Mortagege",
+        "color": "#FF9500"
+      }
+    },
+    "banks": {
+      "BOS": {
+        "name": "Bank of Sharjah",
+        "color": "#C4862E"
+      },
+      "Citi": {
+        "name": "Citibank",
+        "color": "#005F9A"
+      },
+      "ADCB": {
+        "name": "Abu Dhabi Commercial Bank",
+        "color": "#ED0008"
+      },
+      "ADIB": {
+        "name": "Abu Dhabi Islamic Bank",
+        "color": "#22AEEC"
+      },
+      "FGB": {
+        "name": "First Gulf Bank",
+        "color": "#072460"
+      },
+      "NBAD": {
+        "name": "National Bank of Abu Dhabi",
+        "color": "#006532"
+      },
+      "UNB": {
+        "name": "Union National Bank",
+        "color": "#004E61"
+      },
+      "AEI": {
+        "name": "Arab Emirates Investment Bank",
+        "color": "#A70240"
+      },
+      "CBD": {
+        "name": "Commercial Bank of Dubai",
+        "color": "#006666"
+      },
+      "DIB": {
+        "name": "Dubai Islamic Bank",
+        "color": "#619365"
+      },
+      "NBD": {
+        "name": "EmiratesNBD",
+        "color": "#0E1C43"
+      },
+      "EIB": {
+        "name": "Emirates Islamic Bank",
+        "color": "#490058"
+      },
+      "HSBC": {
+        "name": "HSBC",
+        "color": "#D41C24"
+      },
+      "MASQ": {
+        "name": "Mashreq Bank",
+        "color": "#F99E2A"
+      },
+      "NOOR": {
+        "name": "Noor Bank",
+        "color": "#243B97"
+      },
+      "NBF": {
+        "name": "National Bank of Fujairah",
+        "color": "#009DD8"
+      },
+      "CBI": {
+        "name": "Commercial Bank International",
+        "color": "#7B014F"
+      },
+      "RAK": {
+        "name": "RAKBANK",
+        "color": "#ED1C24"
+      },
+      "INV": {
+        "name": "Invest Bank",
+        "color": "#19539B"
+      },
+      "UAB": {
+        "name": "United Arab Bank",
+        "color": "#006DA5"
+      },
+      "NBQ": {
+        "name": "National Bank of Umm Al-Qaiwain",
+        "color": "#2C5F96"
+      }
+    }
+  },
+  "env:development": {},
+  "env:test": {},
+  "env:production": {},
+  "os:android": {},
+  "os:blackberry": {},
+  "os:ios": {},
+  "os:mobileweb": {},
+  "os:windows": {},
+  "dependencies": {}
 }
