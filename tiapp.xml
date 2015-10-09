@@ -49,6 +49,8 @@
 		<theme>default</theme>
 	</mobileweb>
 	<modules>
+		<module platform="android" version="1.2.0">de.marcelpociot.collectionview</module>
+		<module platform="iphone" version="1.4.0">de.marcelpociot.collectionview</module>
 	</modules>
 	<deployment-targets>
 		<target device="android">true</target>
