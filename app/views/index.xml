@@ -1,11 +1,16 @@
 <Alloy>
   <Window>
-    <ListView defaultItemTemplate="template" id="list" method="createCollectionView" module="CollectionView">
+    <ListView defaultItemTemplate="template" method="createCollectionView" module="CollectionView">
       <Templates>
         <ItemTemplate name="template">
           <View class="container ccBox">
-            <Label bindId="title"/>
-            <Label bindId="time"/>
+            <Label bindId="title" class="titleLbl"/>
+            <Label bindId="time" class="timeLbl"/>
+            <View class="lineView">
+              <Label bindId="type" class="iconLbl"/>
+              <Label bindId="bank" class="iconLbl"/>
+              <Label bindId="period" class="iconLbl"/>
+            </View>
           </View>
         </ItemTemplate>
         <ItemTemplate name="add">
@@ -13,13 +18,13 @@
         </ItemTemplate>
       </Templates>
       <ListSection id="section1" method="createCollectionSection" module="de.marcelpociot.collectionview">
-        <ListItem method="createCollectionItem" module="de.marcelpociot.collectionview" time:text="3 days" title:text="Bank #1"/>
-        <ListItem method="createCollectionItem" module="de.marcelpociot.collectionview" time:text="3 days" title:text="Bank #1"/>
-        <ListItem method="createCollectionItem" module="de.marcelpociot.collectionview" time:text="3 days" title:text="Bank #1"/>
-        <ListItem method="createCollectionItem" module="de.marcelpociot.collectionview" time:text="3 days" title:text="Bank #1"/>
-        <ListItem method="createCollectionItem" module="de.marcelpociot.collectionview" time:text="3 days" title:text="Bank #1"/>
-        <ListItem method="createCollectionItem" module="de.marcelpociot.collectionview" time:text="3 days" title:text="Bank #1"/>
-        <ListItem method="createCollectionItem" module="de.marcelpociot.collectionview" time:text="3 days" title:text="Bank #1"/>
+        <ListItem bank:backgroundColor="#072460" bank:text="FGB" method="createCollectionItem" module="de.marcelpociot.collectionview" period:text="40d" time:text="Within 3 days" title:text="#6547" type:backgroundColor="#EF4DB6" type:text="CC"/>
+        <ListItem bank:backgroundColor="#619365" bank:text="DIB" method="createCollectionItem" module="de.marcelpociot.collectionview" period:text="M" time:text="Next week" title:text="Car" type:backgroundColor="#FF5E3A" type:text="LO"/>
+        <ListItem bank:backgroundColor="#0E1C43" bank:text="NBD" method="createCollectionItem" module="de.marcelpociot.collectionview" period:text="A" time:text="Next Jun" title:text="Home" type:backgroundColor="#FF2A68" type:text="MO"/>
+        <ListItem bank:backgroundColor="#619365" bank:text="DIB" method="createCollectionItem" module="de.marcelpociot.collectionview" period:text="45d" time:text="Within 3 days" title:text="#8764" type:backgroundColor="#EF4DB6" type:text="CC"/>
+        <ListItem bank:backgroundColor="#0E1C43" bank:text="NBD" method="createCollectionItem" module="de.marcelpociot.collectionview" period:text="A" time:text="Within 3 days" title:text="University" type:backgroundColor="#FF2A68" type:text="MO"/>
+        <ListItem bank:backgroundColor="#072460" bank:text="FGB" method="createCollectionItem" module="de.marcelpociot.collectionview" period:text="55d" time:text="Next month" title:text="#1928" type:backgroundColor="#EF4DB6" type:text="CC"/>
+        <ListItem bank:backgroundColor="#072460" bank:text="FGB" method="createCollectionItem" module="de.marcelpociot.collectionview" period:text="M" time:text="N/A" title:text="2012 vacation" type:backgroundColor="#FF5E3A" type:text="LO"/>
         <ListItem method="createCollectionItem" module="de.marcelpociot.collectionview" template="add"/>
       </ListSection>
     </ListView>
