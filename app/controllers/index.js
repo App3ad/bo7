@@ -1,1 +1,1 @@
-$.index.open();
+Alloy.Globals.pageStack.open( $.index );

@@ -1,12 +1,15 @@
 <Alloy>
   <Window>
-    <ListView backgroundColor="white" defaultItemTemplate="template" id="listView" method="createCollectionView" module="CollectionView">
+    <ListView defaultItemTemplate="template" id="list" method="createCollectionView" module="CollectionView">
       <Templates>
         <ItemTemplate name="template">
-          <View layout="vertical">
-						<Label bindId="title"/>
+          <View class="container ccBox">
+            <Label bindId="title"/>
             <Label bindId="time"/>
           </View>
+        </ItemTemplate>
+        <ItemTemplate name="add">
+          <Button class="addBtn"/>
         </ItemTemplate>
       </Templates>
       <ListSection id="section1" method="createCollectionSection" module="de.marcelpociot.collectionview">
@@ -17,6 +20,7 @@
         <ListItem method="createCollectionItem" module="de.marcelpociot.collectionview" time:text="3 days" title:text="Bank #1"/>
         <ListItem method="createCollectionItem" module="de.marcelpociot.collectionview" time:text="3 days" title:text="Bank #1"/>
         <ListItem method="createCollectionItem" module="de.marcelpociot.collectionview" time:text="3 days" title:text="Bank #1"/>
+        <ListItem method="createCollectionItem" module="de.marcelpociot.collectionview" template="add"/>
       </ListSection>
     </ListView>
   </Window>

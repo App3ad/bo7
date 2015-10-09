@@ -1,7 +1,52 @@
+'Window': {
+  title: 'Bank of 7'
+}
 'ListView[platform=ios]': {}
 'ListView[platform=android]': {
   // ANDROID ONLY
   columnWidth: 150,
   verticalSpacing: 10,
   horizontalSpacing: 10
+}
+'ListItem': {
+  /*width: 148,
+  height: 150*/
+}
+'.container': {
+  layout: 'vertical',
+  top: 8,
+  borderRadius: 8,
+  viewShadowColor: '#aaa',
+  viewShadowOffset: {
+    x: 1,
+    y: 1
+  },
+  viewShadowRadius: 1
+}
+'.addBtn': {
+  top: 8,
+  borderRadius: 8,
+  width: Titanium.UI.FILL,
+  height: Titanium.UI.FILL,
+  title: '+',
+  font: {
+    fontSize: 70
+  }
+}
+
+'.ccBox': {
+  backgroundGradient: {
+    type: 'linear',
+    startPoint: {
+      x: 0,
+      y: 0
+    },
+    endPoint: {
+      x: 0,
+      y: '100%'
+    },
+    colors: [
+      '#EF4DB6', '#C643FC'
+    ]
+  }
 }
