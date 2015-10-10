@@ -1,7 +1,7 @@
 <Alloy>
   <Collection src="product"/>
   <Window>
-    <ListView defaultItemTemplate="template" method="createCollectionView" module="CollectionView">
+    <ListView defaultItemTemplate="template" method="createCollectionView" module="CollectionView" onItemclick="productListClicked">
       <Templates>
         <ItemTemplate name="template">
           <View class="container ccBox">
@@ -19,8 +19,8 @@
         </ItemTemplate>
       </Templates>
       <ListSection dataCollection="product" dataTransform="transfomer" method="createCollectionSection" module="de.marcelpociot.collectionview">
-        <ListItem bank:backgroundColor="{bankColor}" bank:text="{bankCode}" method="createCollectionItem" module="de.marcelpociot.collectionview" period:text="{period}" time:text="{time}" title:text="{title}" type:backgroundColor="{typeColor}"
-          type:text="{typeCode}"/>
+        <ListItem bank:backgroundColor="{bankColor}" bank:text="{bankCode}" lastPaymentDate="{lastPaymentDate}" method="createCollectionItem" module="de.marcelpociot.collectionview" myId="{id}" period:text="{period}" periodNumber="{periodNumber}"
+          periodType="{periodType}" time:text="{time}" title:text="{title}" type:backgroundColor="{typeColor}" type:text="{typeCode}"/>
       </ListSection>
       <ListSection method="createCollectionSection" module="de.marcelpociot.collectionview">
         <ListItem method="createCollectionItem" module="de.marcelpociot.collectionview" template="add"/>

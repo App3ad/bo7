@@ -37,4 +37,40 @@ function transfomer(model) {
   return transform;
 }
 
+function productListClicked(e) {
+  // get the clicked item from that section
+  var item = e.section.getItemAt(e.itemIndex);
+
+  // clicked button
+  Ti.API.debug(JSON.stringify(item));
+
+  // Confirmation dialog
+  var dialog = Ti.UI.createAlertDialog({
+    title: 'Yah, Paied?',
+    // Get the next payment time, double period from lastPaymentDate, since we still didn't update it
+    message: 'Next payment: ' + moment(item.properties.lastPaymentDate).add(parseInt(item.properties.periodNumber) * 2, item.properties.periodType).fromNow(),
+    cancel: 0,
+    buttonNames: ['Not yet', 'Yes']
+  });
+  dialog.addEventListener('click', function(e) {
+    // Get the model
+    var myModel = Alloy.createModel('product');
+    myModel.fetch({
+      id: item.properties.myId
+    });
+
+    // Set last payment date
+    myModel.set({
+      lastPaymentDate: moment(item.properties.lastPaymentDate).add(item.properties.periodNumber, item.properties.periodType).toISOString()
+    });
+
+    myModel.save();
+
+    // Update the UICollactionView
+    Alloy.Collections.product.fetch();
+  });
+  dialog.show()
+}
+
+// Load the data into the collection, collection will bind the data into the UICollactionView automaticly
 Alloy.Collections.product.fetch();
