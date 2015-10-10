@@ -1,6 +1,22 @@
 'Window': {
   title: 'Bank of 7amada'
 }
+'ListView': {
+  // Context menu options
+  showContextMenu: true,
+  contextMenuStrokeColor: "#FB2B69",
+  contextMenuItems: [
+    {
+      tintColor: "#FB2B69",
+      selected: "/images/editIconSelected.png",
+      unselected: "/images/editIcon.png"
+    }, {
+      tintColor: "#FB2B69",
+      selected: "/images/trashIconSelected.png",
+      unselected: "/images/trashIcon.png"
+    }
+  ]
+}
 'ListView[platform=ios]': {}
 'ListView[platform=android]': {
   // ANDROID ONLY

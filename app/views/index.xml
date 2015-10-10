@@ -1,7 +1,7 @@
 <Alloy>
   <Collection src="product"/>
   <Window>
-    <ListView defaultItemTemplate="template" method="createCollectionView" module="CollectionView" onItemclick="productListClicked">
+    <ListView defaultItemTemplate="template" id="list" method="createCollectionView" module="CollectionView" onItemclick="productListClicked">
       <Templates>
         <ItemTemplate name="template">
           <View class="container ccBox">

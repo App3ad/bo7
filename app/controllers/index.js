@@ -73,8 +73,35 @@ function productListClicked(e) {
     // Update the UICollactionView
     Alloy.Collections.product.fetch();
   });
-  dialog.show()
+  dialog.show();
 }
+
+$.list.addEventListener("contextMenuClick", function(e) {
+
+  switch (e.index) {
+    case 1:
+      // Confirmation dialog
+      var dialog = Ti.UI.createAlertDialog({
+        title: 'Sure?',
+        message: 'Are you sure to delete this product?',
+        cancel: 0,
+        buttonNames: ['No', 'Yes']
+      });
+      dialog.addEventListener('click', function(e) {
+        if (e.index === e.cancel) {
+          return;
+        }
+
+        Alloy.Collections.product.at(0).destroy();
+      });
+      dialog.show();
+      break;
+    default:
+    case 1:
+      alert("Edit CollectionView item " + e.itemIndex);
+      break;
+  }
+});
 
 // Load the data into the collection, collection will bind the data into the UICollactionView automaticly
 Alloy.Collections.product.fetch();
