@@ -5,7 +5,7 @@ exports.definition = {
       "title": "TEXT",
       "typeCode": "TEXT",
       "bankCode": "TEXT",
-      "periodNumber": "TEXT",
+      "periodNumber": "INTEGER",
       "periodType": "TEXT",
       "EndDate": "TEXT",
       "lastPaymentDate": "TEXT"
