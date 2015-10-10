@@ -109,5 +109,7 @@
   "os:ios": {},
   "os:mobileweb": {},
   "os:windows": {},
-  "dependencies": {}
+  "dependencies": {
+    "com.caffeinalab.titanium.passcode": "1.2.1"
+  }
 }

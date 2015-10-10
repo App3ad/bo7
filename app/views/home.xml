@@ -1,0 +1,33 @@
+<Alloy>
+  <Collection src="product"/>
+  <Window>
+    <RightNavButton platform="!android">
+      <Button onClick="addBtnClicked">Add</Button>
+    </RightNavButton>
+    <LeftNavButton platform="!android">
+      <Button onClick="logoutBtnClicked">Logout</Button>
+    </LeftNavButton>
+    <Menu platform="android">
+      <MenuItem onClick="addBtnClicked" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" title="Add"/>
+    </Menu>
+    <ListView defaultItemTemplate="template" id="list" onItemclick="productListClicked">
+      <Templates>
+        <ItemTemplate name="template">
+          <View class="container ccBox">
+            <Label bindId="title" class="titleLbl"/>
+            <Label bindId="time" class="timeLbl"/>
+            <View class="lineView">
+              <Label bindId="type" class="iconLbl"/>
+              <Label bindId="bank" class="iconLbl"/>
+              <Label bindId="period" class="iconLbl"/>
+            </View>
+          </View>
+        </ItemTemplate>
+      </Templates>
+      <ListSection dataCollection="product" dataTransform="transfomer">
+        <ListItem bank:backgroundColor="{bankColor}" bank:text="{bankCode}" lastPaymentDate="{lastPaymentDate}" myId="{id}" period:text="{period}" periodNumber="{periodNumber}" periodType="{periodType}" time:text="{time}" title:text="{title}"
+          type:backgroundColor="{typeColor}" type:text="{typeCode}"/>
+      </ListSection>
+    </ListView>
+  </Window>
+</Alloy>

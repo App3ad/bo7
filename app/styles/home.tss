@@ -25,8 +25,8 @@
   horizontalSpacing: 10
 }
 'ListItem': {
-  /*width: 148,
-  height: 150*/}
+  height: 80
+}
 '.container': {
   backgroundColor: '#fff',
   top: 8,
@@ -40,6 +40,7 @@
 }
 '.titleLbl': {
   top: 0,
+  left: 10,
   font: {
     fontSize: 12
   }
@@ -47,7 +48,8 @@
 '.timeLbl': {
   textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
   top: 16,
-  bottom: 26,
+  left: 30,
+  //bottom: 26,
   font: {
     fontSize: 15
   }
@@ -56,7 +58,7 @@
   height: Titanium.UI.SIZE,
   width: Titanium.UI.SIZE,
   layout: 'horizontal',
-  bottom: 2
+  right: 10
 }
 '.iconLbl': {
   height: 24,
