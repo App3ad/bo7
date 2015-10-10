@@ -15,7 +15,7 @@
           </View>
         </ItemTemplate>
         <ItemTemplate name="add">
-          <Button class="addBtn"/>
+          <Label class="addBtn" bindId="addBtn"/>
         </ItemTemplate>
       </Templates>
       <ListSection dataCollection="product" dataTransform="transfomer" method="createCollectionSection" module="de.marcelpociot.collectionview">

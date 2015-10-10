@@ -1,0 +1,16 @@
+<Alloy>
+  <Window title="Add Product" onOpen="windowOpened">
+    <RightNavButton platform="!android">
+      <Button onClick="saveBtnClicked">Save</Button>
+    </RightNavButton>
+    <ScrollView>
+      <TextField hintText="Title" id="title"/>
+      <TextField hintText="Product type" id="typeCode"/>
+      <TextField hintText="Bank" id="bankCode"/>
+      <TextField hintText="Period number" id="periodNumber"/>
+      <TextField hintText="Period type" id="periodType"/>
+      <TextField hintText="End Date" id="EndDate"/>
+      <TextField hintText="Last Payment Date" id="lastPaymentDate"/>
+    </ScrollView>
+  </Window>
+</Alloy>
