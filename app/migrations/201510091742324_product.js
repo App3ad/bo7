@@ -3,56 +3,56 @@ var preload_data = [{
   bankCode: "ADCB",
   periodType: "days",
   periodNumber: 40,
-  EndDate: "Fri Oct 09 2019 21:08:03 GMT+0200 (EET)",
-  lastPaymentDate: "Fri Sep 20 2019 21:08:03 GMT+0200 (EET)",
+  EndDate: "2017-05-10T08:18:20.692Z",
+  lastPaymentDate: "2015-09-29T08:18:20.692Z",
   title: "#6547",
   typeCode: "CC"
 }, {
   bankCode: "DIB",
   periodType: "months",
   periodNumber: 6,
-  EndDate: "Fri Oct 09 2019 21:08:03 GMT+0200 (EET)",
-  lastPaymentDate: "Fri Jun 09 2015 21:08:03 GMT+0200 (EET)",
+  EndDate: "2019-10-09T08:18:20.692Z",
+  lastPaymentDate: "2015-07-09T08:18:20.692Z",
   title: "Car",
   typeCode: "LO"
 }, {
   bankCode: "NBD",
   periodType: "years",
   periodNumber: 1,
-  EndDate: "Fri Oct 09 2019 21:08:03 GMT+0200 (EET)",
-  lastPaymentDate: "Fri Dec 09 2014 21:08:03 GMT+0200 (EET)",
+  EndDate: "2019-10-09T08:18:20.692Z",
+  lastPaymentDate: "2014-12-09T08:18:20.692Z",
   title: "Home",
   typeCode: "MO"
 }, {
   bankCode: "DIB",
   periodType: "days",
   periodNumber: 10,
-  EndDate: "Fri Oct 09 2019 21:08:03 GMT+0200 (EET)",
-  lastPaymentDate: "Fri Sep 29 2015 21:08:03 GMT+0200 (EET)",
+  EndDate: "2019-10-09T08:18:20.692Z",
+  lastPaymentDate: "2015-09-12T08:18:20.692Z",
   title: "#8764",
   typeCode: "CC"
 }, {
   bankCode: "NBD",
   periodType: "years",
   periodNumber: 1,
-  EndDate: "Fri Oct 09 2019 21:08:03 GMT+0200 (EET)",
-  lastPaymentDate: "Fri Oct 09 2015 21:08:03 GMT+0200 (EET)",
+  EndDate: "2019-10-09T08:18:20.692Z",
+  lastPaymentDate: "2015-10-09T08:18:20.692Z",
   title: "University",
   typeCode: "MO"
 }, {
   bankCode: "FGB",
   periodType: "days",
   periodNumber: 55,
-  EndDate: "Fri Oct 09 2019 21:08:03 GMT+0200 (EET)",
-  lastPaymentDate: "Fri Oct 09 2015 21:08:03 GMT+0200 (EET)",
+  EndDate: "2019-10-09T08:18:20.692Z",
+  lastPaymentDate: "2015-10-09T08:18:20.692Z",
   title: "#1928",
   typeCode: "CC"
 }, {
   bankCode: "FGB",
   periodType: "months",
   periodNumber: 3,
-  EndDate: "Fri Oct 09 2019 21:08:03 GMT+0200 (EET)",
-  lastPaymentDate: "Fri Oct 09 2015 21:08:03 GMT+0200 (EET)",
+  EndDate: "2019-10-09T08:18:20.692Z",
+  lastPaymentDate: "2015-10-09T08:18:20.692Z",
   title: "2012 vacation",
   typeCode: "LO"
 }];
