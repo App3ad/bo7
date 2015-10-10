@@ -99,7 +99,7 @@ function productListClicked(eList) {
           buttonNames: ['No', 'Yes']
         });
         dialog.addEventListener('click', function() {
-          if (e.cancel !== e.index) {
+          if (e.cancel === e.index) {
             return;
           }
           Alloy.Collections.product.at(eList.itemIndex).destroy();
