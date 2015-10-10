@@ -92,7 +92,7 @@ $.list.addEventListener("contextMenuClick", function(e) {
           return;
         }
 
-        Alloy.Collections.product.at(0).destroy();
+        Alloy.Collections.product.at(e.itemIndex).destroy();
       });
       dialog.show();
       break;
