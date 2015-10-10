@@ -3,11 +3,10 @@ exports.definition = {
     columns: {
       "id": "INTEGER PRIMARY KEY AUTOINCREMENT",
       "title": "TEXT",
-      "type": "TEXT",
+      "typeCode": "TEXT",
       "bankCode": "TEXT",
       "periodNumber": "TEXT",
       "periodType": "TEXT",
-      "createdDate": "TEXT",
       "EndDate": "TEXT",
       "lastPaymentDate": "TEXT"
     },

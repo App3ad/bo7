@@ -5,10 +5,18 @@ Alloy.Globals.pageStack.open($.index);
 function transfomer(model) {
   var transform = model.toJSON();
   // Set the color of each bank
-  transform.bankColor = Alloy.CFG.banks[transform.bankCode].color;
+  try {
+    transform.bankColor = Alloy.CFG.banks[transform.bankCode].color;
+  } catch (ex) {
+    Ti.API.error("Can't find color for bankCode: " + transform.bankCode);
+  }
 
   // Set the color of the broduct
-  transform.typeColor = Alloy.CFG.productType[transform.typeCode].color;
+  try {
+    transform.typeColor = Alloy.CFG.productType[transform.typeCode].color;
+  } catch (ex) {
+    Ti.API.error("Can't find color for typeCode: " + transform.typeCode);
+  }
 
   // Calculate the time from now
   transform.time = moment(transform.lastPaymentDate).add(transform.periodNumber, transform.periodType).fromNow();

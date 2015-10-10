@@ -3,43 +3,38 @@ var preload_data = [{
   bankCode: "ADCB",
   periodType: "days",
   periodNumber: 40,
-  //createdDate: "Fri Oct 09 2015 10:08:03 GMT+0200 (EET)",
   EndDate: "Fri Oct 09 2019 21:08:03 GMT+0200 (EET)",
-  lastPaymentDate: "Fri Jun 01 2014 10:08:03 GMT+0200 (EET)",
+  lastPaymentDate: "Fri Sep 20 2019 21:08:03 GMT+0200 (EET)",
   title: "#6547",
   typeCode: "CC"
 }, {
   bankCode: "DIB",
   periodType: "months",
   periodNumber: 6,
-  //createdDate: "Fri Oct 09 2015 21:08:03 GMT+0200 (EET)",
   EndDate: "Fri Oct 09 2019 21:08:03 GMT+0200 (EET)",
-  lastPaymentDate: "Fri Dec 09 2013 21:08:03 GMT+0200 (EET)",
+  lastPaymentDate: "Fri Jun 09 2015 21:08:03 GMT+0200 (EET)",
   title: "Car",
   typeCode: "LO"
 }, {
   bankCode: "NBD",
   periodType: "years",
   periodNumber: 1,
-  //createdDate: "Fri Oct 09 2015 21:08:03 GMT+0200 (EET)",
   EndDate: "Fri Oct 09 2019 21:08:03 GMT+0200 (EET)",
-  lastPaymentDate: "Fri Oct 09 2015 21:08:03 GMT+0200 (EET)",
+  lastPaymentDate: "Fri Dec 09 2014 21:08:03 GMT+0200 (EET)",
   title: "Home",
   typeCode: "MO"
 }, {
   bankCode: "DIB",
   periodType: "days",
   periodNumber: 10,
-  //createdDate: "Fri Oct 09 2015 21:08:03 GMT+0200 (EET)",
   EndDate: "Fri Oct 09 2019 21:08:03 GMT+0200 (EET)",
-  lastPaymentDate: "Fri Oct 09 2015 21:08:03 GMT+0200 (EET)",
+  lastPaymentDate: "Fri Sep 29 2015 21:08:03 GMT+0200 (EET)",
   title: "#8764",
   typeCode: "CC"
 }, {
   bankCode: "NBD",
   periodType: "years",
   periodNumber: 1,
-  //createdDate: "Fri Oct 09 2015 21:08:03 GMT+0200 (EET)",
   EndDate: "Fri Oct 09 2019 21:08:03 GMT+0200 (EET)",
   lastPaymentDate: "Fri Oct 09 2015 21:08:03 GMT+0200 (EET)",
   title: "University",
@@ -48,7 +43,6 @@ var preload_data = [{
   bankCode: "FGB",
   periodType: "days",
   periodNumber: 55,
-  //createdDate: "Fri Oct 09 2015 21:08:03 GMT+0200 (EET)",
   EndDate: "Fri Oct 09 2019 21:08:03 GMT+0200 (EET)",
   lastPaymentDate: "Fri Oct 09 2015 21:08:03 GMT+0200 (EET)",
   title: "#1928",
@@ -57,7 +51,6 @@ var preload_data = [{
   bankCode: "FGB",
   periodType: "months",
   periodNumber: 3,
-  //createdDate: "Fri Oct 09 2015 21:08:03 GMT+0200 (EET)",
   EndDate: "Fri Oct 09 2019 21:08:03 GMT+0200 (EET)",
   lastPaymentDate: "Fri Oct 09 2015 21:08:03 GMT+0200 (EET)",
   title: "2012 vacation",
@@ -73,7 +66,6 @@ migration.up = function(migrator) {
       "bankCode": "TEXT",
       "periodNumber": "TEXT",
       "periodType": "TEXT",
-      "createdDate": "TEXT",
       "EndDate": "TEXT",
       "lastPaymentDate": "TEXT"
     }
