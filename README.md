@@ -1,6 +1,8 @@
 # About
 It's a platfrom that collect your Banking multi-accounts, Financials liabilities and electronic wallets information in one Mobile (iPhone & Android) app that can help you with scheduled notifications to make sure you will pay your bank debts on time, or even if you close to one of that ATM machines listed there you will get location notification to pay now.
 
+![gif](https://raw.githubusercontent.com/App3ad/bo7/master/screen.gif)
+
 # Decode Dubai
 This code initialed in [Decode Dubai](http://dic.ae/decodedubai/) hackathon orgnized by [In5](http://in5.ae) and [FGB Bank](http://fgb.ae) in October 9 and 10, 2015 located in [MediaOne] ([http://www.mediaonehotel.com](http://www.mediaonehotel.com)) at [Dubai Internet City] ([http://www.dic.ae](http://www.dic.ae)). Decode Dubai, their 3rd hackathon of the year to find disruptive apps and web solutions in the banking industry. Some of the examples of these are paperless banking processes, compulsive saving schemas, payment gateways, account portability, mobile wallets, cross border remittances, secured crowd lending/sourcing platform, credit scoring and more.
 
