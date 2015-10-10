@@ -53,6 +53,10 @@ function productListClicked(e) {
     buttonNames: ['Not yet', 'Yes']
   });
   dialog.addEventListener('click', function(e) {
+    if (e.index === e.cancel) {
+      return;
+    }
+
     // Get the model
     var myModel = Alloy.createModel('product');
     myModel.fetch({
